@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/p5.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/0.10.2/addons/p5.sound.min.js"></script>
+    <script src="https://kit.fontawesome.com/ab6eeb1603.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <title>E-Geolab</title>
+  </head>
+  <body>
+    
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+          <a class="navbar-brand mx-auto" href="index.html">E-Geolab</a>
+        </nav>  
+        <div class="jumbotron">
+          <div class="row justify-content-center">  
+            <div class="col">
+              <h1 class="text-center pb-5">Quiz Persegi Panjang</h1>
+              <div class="card text-center pt-5" style="width: (100/3)%;">
+              
+              <h3>2. Perhatikan bangun persegi panjang PQRS dibawah!</h3>
+              <img src="img/quizpersegipanjang2.jpg" style="width: 300px" class="mx-auto">
+               <h3>Jika luas persegi panjang tersebut adalah 20 cm<sup>2</sup> <br> maka panjang sisi QR adalah...</h3>
+              <br>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jawabanBenar"><h5>A. 4 cm</h5></button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jawabanSalah"><h5>B. 5 cm</h5></button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jawabanSalah"><h5>C. 6 cm</h5></button>
+              <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#jawabanSalah"><h5>D. 7 cm</h5></button>
+
+              </div>
+
+            </div>
+          </div>  
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="jawabanBenar" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hasil Jawaban</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-center"><i class="far fa-grin"></i> <i class="far fa-thumbs-up"></i></h1>
+            <h1 class="text-center">JAWABANMU BENAR</h1>
+          </div>
+          <div class="modal-footer">
+            
+            <a href="quizpersegipanjang3.html" class="btn btn-primary">Lanjut <i class="fas fa-chevron-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="jawabanSalah" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+      <div class="modal-dialog" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Hasil Jawaban</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <h1 class="text-center"><i class="far fa-grin-tongue-squint"></i> <i class="far fa-thumbs-down"></i></h1>
+            <h1 class="text-center">JAWABANMU SALAH</h1>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fas fa-undo"></i> Ulang</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="persegi.js"></script>
+  </body>
+</html>
